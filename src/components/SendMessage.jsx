@@ -5,7 +5,7 @@ import { async } from "@firebase/util";
 
 
 
-export default function SendMessage() {
+export default function SendMessage(scroll) {
 
     const [message, setMessage] = useState("");
     const sendMessage = async (event) => {
@@ -25,6 +25,7 @@ export default function SendMessage() {
 
         });
         setMessage("")
+        scroll.current.scrollIntoView({ behaviour: "smooth" });
     }
     return (
         <form onSubmit={(event) => sendMessage(event)} className="sendMessageForm">

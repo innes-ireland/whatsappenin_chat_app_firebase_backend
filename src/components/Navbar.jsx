@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { auth } from "../firebase";
+import { auth } from "../firebase.js";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 

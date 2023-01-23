@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { auth, db } from "../firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import SendMessage from "./SendMessage";
@@ -10,6 +10,7 @@ import Message from "./Message";
 export default function ChatWindow() {
 
     const [messages, setMessages] = useState([]);
+    const scroll = useRef()
 
     useEffect(() => {
         const q = query(
@@ -30,12 +31,13 @@ export default function ChatWindow() {
     return (
 
         <div className="chatWindow_wrapper">
+            <span ref={scroll}> </span>
             <div className="messageWindow">
                 {messages.map((message) => {
                     <Message key={message.id} message={message} />
                 })}
             </div>
-            <SendMessage />
+            <SendMessage scroll={scroll} />
         </div>
 
     )
