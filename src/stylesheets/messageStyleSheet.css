@@ -2,13 +2,31 @@ html {
     color: white;
 }
 
+.right {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
 .chat-bubble {
+    display: flex;
+    flex-direction: row;
     color: #FFFFFF;
-    background-color: #FFBF69;
+    background-color: #2EC4B6;
+    padding-top: 5px;
+
+
+
+}
+
+.chat-bubble.right {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #FFFFFF;
+    padding-top: 5px;
 
 }
 
 .chat-bubble__right {
-    color: #FFFFFF;
-    background-color: #FF9F1C;
+    background-color: #FFBF69;
 }

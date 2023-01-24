@@ -42,7 +42,7 @@ export default function SendMessage(scroll) {
                 placeholder="type your message here"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)} />
-            <button type="submit"> send message</button>
+            <button type="submit" className="sendButton"> send message</button>
         </form>
     )
 }

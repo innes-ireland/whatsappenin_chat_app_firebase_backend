@@ -3,3 +3,9 @@ body {
     color: #FFFFFF;
 
 }
+
+.messageWindow {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
