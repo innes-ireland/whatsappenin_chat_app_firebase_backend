@@ -4,7 +4,7 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import SendMessage from "./SendMessage";
 import { query, orderBy, onSnapshot, limit, } from "firebase/firestore";
 import Message from "./Message";
-
+import "../stylesheets/chatWindowStyleSheet.css"
 
 
 export default function ChatWindow() {
@@ -33,9 +33,9 @@ export default function ChatWindow() {
         <div className="chatWindow_wrapper">
             <span ref={scroll}> </span>
             <div className="messageWindow">
-                {messages.map((message) => {
+                {messages?.map((message) => (
                     <Message key={message.id} message={message} />
-                })}
+                ))}
             </div>
             <SendMessage scroll={scroll} />
         </div>

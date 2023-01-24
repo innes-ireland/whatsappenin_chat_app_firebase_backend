@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { auth, db } from "../firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { async } from "@firebase/util";
+import "../stylesheets/sendMessageStyleSheet.css"
 
 
 

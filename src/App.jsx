@@ -5,6 +5,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import ChatWindow from './components/ChatWindow';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
     <div className="App">
       <Navbar />
       {!user ? <Welcome /> : <ChatWindow />}
-
+      <Footer />
     </div>
   );
 }

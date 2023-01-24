@@ -4,6 +4,7 @@ import { auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function Message({ message }) {
+
     const [user] = useState(auth)
     return (
         <div className={`chat-bubble ${message.uid === user.uid ? "right" : ""}`}>

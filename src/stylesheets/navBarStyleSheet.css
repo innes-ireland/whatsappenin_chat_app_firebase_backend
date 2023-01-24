@@ -1,0 +1,21 @@
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    background-color: #2EC4B6;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #2EC4B6;
+    border-style: none;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    background-color: #2EC4B6;
+    border-radius: 50%;
+}

@@ -1,0 +1,14 @@
+html {
+    color: white;
+}
+
+.chat-bubble {
+    color: #FFFFFF;
+    background-color: #FFBF69;
+
+}
+
+.chat-bubble__right {
+    color: #FFFFFF;
+    background-color: #FF9F1C;
+}
