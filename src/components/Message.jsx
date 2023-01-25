@@ -7,6 +7,7 @@ import "../stylesheets/messageStyleSheet.css"
 export default function Message({ message }) {
 
     const [user] = useAuthState(auth)
+    // classname for each chat bubble is decided based on if message uid is the same as user uid. If so messages will be displayed to the right of the screen 
     return (
         <div className={`chat-bubble ${message.uid === user.uid ? "right" : ""}`}>
             <img className="chat-bubble__left"

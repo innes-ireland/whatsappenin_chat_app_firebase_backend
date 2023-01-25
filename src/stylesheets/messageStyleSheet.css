@@ -1,12 +1,9 @@
 html {
     color: white;
+
 }
 
-.right {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-}
+
 
 .chat-bubble {
     display: flex;
@@ -14,6 +11,7 @@ html {
     color: #FFFFFF;
     background-color: #2EC4B6;
     padding-top: 5px;
+
 
 
 
@@ -25,8 +23,19 @@ html {
     color: #FFFFFF;
     padding-top: 5px;
 
+
+}
+
+.chat-bubble.right>.chat-bubble__right {
+    background-color: #FFBF69;
+    border-radius: 5%;
+
+    padding: 10px;
 }
 
 .chat-bubble__right {
     background-color: #FFBF69;
+    border-radius: 5%;
+    width: fit-content;
+    padding: 10px;
 }

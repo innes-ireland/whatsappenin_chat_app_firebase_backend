@@ -1,8 +1,22 @@
+.sendMessageForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
 .sendButton {
     background-color: #FF9F1C;
     color: #FFFFFF;
+    border-style: solid;
+    border-radius: 5px;
+
 }
 
 input {
     background-color: #CBF3F0;
+    color: #FFFFFF;
+    width: 50%;
+    height: 75%;
+
 }
