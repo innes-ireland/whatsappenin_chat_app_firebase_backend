@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { auth } from "../firebase.js";
 import signInButton from "../images/google-logo.png"
+import logout from "../images/logout.png"
 import { useAuthState } from "react-firebase-hooks/auth";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 import "../stylesheets/navBarStyleSheet.css"
@@ -24,7 +25,7 @@ export default function Navbar() {
                 <h1> Whatsappenin, a react chat app built with firebase</h1>
                 {user ? (
                     <button  >
-                        <img src={signInButton} alt="google sign in logo" onClick={signOut} className="signIn_btn" type="button" />
+                        <img src={logout} alt="google sign in logo" onClick={signOut} className="signIn_btn" type="button" />
                     </button>
                 ) : (
                     <button>

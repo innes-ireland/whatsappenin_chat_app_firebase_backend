@@ -4,3 +4,8 @@ body {
     align-content: flex-end;
     max-height: 10vh;
 }
+
+a {
+    text-decoration: none;
+    color: #FF9F1C;
+}
